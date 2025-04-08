@@ -37,13 +37,5 @@ crew = Crew(
 chatcrew = Crew(
     agents=[chatter], 
     tasks = [livechat],
-    memory=True,
-    embedder={
-                "provider": "google",
-                "config":{
-                "model": 'models/embedding-001',
-                "task_type": "RETRIEVAL_DOCUMENT",
-                "title": "Embeddings for Embedchain"
-            }
-        }
+    memory=False 
 )
